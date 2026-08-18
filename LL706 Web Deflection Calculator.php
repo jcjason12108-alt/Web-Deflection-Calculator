@@ -3,7 +3,7 @@
  * Plugin Name: LL706 Web Deflection Calculator
  * Plugin URI: https://github.com/jcjason12108-alt/Web-Deflection-Calculator/
  * Description: Adds EVO and FDL web deflection shim calculators via shortcode.
- * Version: 0.2.1
+ * Version: 0.2.2
  * Author: Jason Cox
  * Requires at least: 6.0
  * Tested up to: 7.0
@@ -43,7 +43,7 @@ if (!empty($ll706_github_token)) {
 
 if (!class_exists('LL706_Web_Deflection_Calculator', false)) {
 final class LL706_Web_Deflection_Calculator {
-    private const VERSION = '0.2.1';
+    private const VERSION = '0.2.2';
 
     public function __construct() {
         add_shortcode('web_deflection_calculator', [$this, 'render_shortcode']);
